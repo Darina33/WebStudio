@@ -1,14 +1,24 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &-title {
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         color: var(--title-text-color);
 
-        @include font(36, 700, 42, 0.03);
+        @include font(28, 700, 33, 0.03);
         text-align: center;
+        
+        @media screen and (min-width: 1200px) {
+                margin-bottom: 50px;
+                @include font(36, 700, 42, 0.03);
+            }
     }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }

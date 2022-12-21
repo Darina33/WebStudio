@@ -1,4 +1,5 @@
 .work {
+    display: none;
     padding-top: 0;
 
     &__list {
@@ -27,3 +28,9 @@
             background-color: rgba(47, 48, 58, 0.8);
         }
 }
+
+ @include desktop {
+     .work {
+        display: flex;
+     }
+ }
