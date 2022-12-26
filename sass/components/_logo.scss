@@ -3,7 +3,8 @@
 
     color: var(--black);
     font-family: Raleway, sans-serif;
-    @include font(26, 700, 31, 0.03);
+    // @include font(26, 700, 31, 0.03);
+    @include font(24, 700, 28, 0.03);
     text-decoration: none;
 
     &__color {

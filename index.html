@@ -34,9 +34,35 @@
         <use href="./images/icons.svg#icon-smartphone"></use>
     </svg>+38 096 111 11 11</a></li>
     </ul>
+    <button type="button" class="menu-open js-open-menu"><svg width="40" height="40"><use href="./images/icons.svg#icon-menu"></use></svg></button>
+    </div>
+    <div class="mobile-menu js-menu-container">
+        <div class="menu-content container">
+        <button type="button" class="menu-close js-close-menu"><svg width="40" height="40"><use href="./images/icons.svg#icon-close-mob"><use></svg></button>
+            <nav class="mob-nav">
+                <ul class="mob-navigation list">
+                    <li class="mob-navigation__item"><a href="./index.html" class="mob-navigation__link current">Студія</a></li>
+                    <li class="mob-navigation__item"><a href="./portfolio.html" class="mob-navigation__link">Портфоліо</a></li>
+                    <li class="mob-navigation__item"><a href="" class="mob-navigation__link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div>
+            <ul class="mob-contacts list">
+                <li class="mob-contacts__item"><a class="mob-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mob-contacts__item"><a class="mob-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <div class="mob-soc-link">
+            <ul class="mob-soc-link-list list">
+                <li><a class="mob-soc-link__link" href="">Instagram</a><span class="mob-soc-link__line"></span></li>
+                <li><a class="mob-soc-link__link"  href="">Twitter</a><span class="mob-soc-link__line"></span></li>
+                <li><a class="mob-soc-link__link"  href="">Facebook</a><span class="mob-soc-link__line"></span></li>
+                <li><a class="mob-soc-link__link"  href="">LinkedIn</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
     </div>
    </header>
-
    <main>
    <section class="hero">
     <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -82,19 +108,19 @@
     <ul class="work__list list">
         <li class="work__item">
             <div class="work__box">
-            <img src="./images/img1.jpg" alt="Програміст працює на комп'ютері" width="370" height="294">
+            <img srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" src="./images/img1.jpg" alt="Програміст працює на комп'ютері" width="370" height="294">
             <p class="work__text">Десктопні додатки</p>
             </div>
         </li>
         <li class="work__item">
             <div class="work__box">
-            <img src="./images/img2.jpg" alt="Програміст розробляє додаткі для смартфонів" width="370" height="294">
+            <img srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" src="./images/img2.jpg" alt="Програміст розробляє додаткі для смартфонів" width="370" height="294">
             <p class="work__text">Мобільні додатки</p>
             </div>
         </li>
         <li class="work__item">
             <div class="work__box">
-            <img src="./images/img3.jpg" alt="Веб дизайнер працює з кольорами" width="370" height="294">
+            <img srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" src="./images/img3.jpg" alt="Веб дизайнер працює з кольорами" width="370" height="294">
             <p class="work__text">Дизайнерські рішення</p>
             </div>
         </li>
@@ -106,7 +132,13 @@
     <h2 class="section-title">Наша команда</h2>
     <ul class="command__list list">
         <li class="command__card">
-            <img src="./images/img4.jpg" alt="Чоловік в окулярах" width="270" height="260">
+            <picture>
+                <source srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/img4-tab.jpg 1x, ./images/img4-tab-2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/img4-mob.jpg 1x, ./images/img4-mob-2x.jpg 2x" media="(min-width:480px)">
+                <img srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x" src="./images/img4.jpg" alt="Чоловік в темній рубашці" width="270"
+                    height="260">
+            </picture>
             <h3 class="command__title">Ігор Дем'яненко</h3>
             <p class="command__post">
                 Product Designer
@@ -123,7 +155,13 @@
             </ul>
         </li>
         <li class="command__card">
-            <img src="./images/img5.jpg" alt="Жінка в окулярах" width="270" height="260">
+            <picture>
+                <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/img5-tab.jpg 1x, ./images/img5-tab-2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/img5-mob.jpg 1x, ./images/img5-mob-2x.jpg 2x" media="(min-width:480px)">
+                <img srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" src="./images/img5.jpg" alt="Жінка в окулярах"
+                    width="270" height="260">
+            </picture>
             <h3 class="command__title">Ольга Рєпіна</h3>
             <p class="command__post">
                 Frontend Developer
@@ -140,7 +178,13 @@
             </ul>
         </li>
         <li class="command__card">
-            <img src="./images/img6.jpg" alt="Чоловік в світлій рубашці" width="270" height="260">
+            <picture>
+                <source srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/img6-tab.jpg 1x, ./images/img6-tab-2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/img6-mob.jpg 1x, ./images/img6-mob-2x.jpg 2x" media="(min-width:480px)">
+                <img srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x" src="./images/img6.jpg" alt="Чоловік в світлій рубашці"
+                    width="270" height="260">
+            </picture>
             <h3 class="command__title">Микола Тарасов</h3>
             <p class="command__post">
                 Marketing
@@ -157,7 +201,13 @@
             </ul>
         </li>
         <li class="command__card">
-            <img src="./images/img7.jpg" alt="Чоловік в окулярах з бородою" width="270" height="260">
+            <picture>
+                <source srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/img7-tab.jpg 1x, ./images/img7-tab-2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/img7-mob.jpg 1x, ./images/img7-mob-2x.jpg 2x" media="(min-width:480px)">
+                <img srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x" src="./images/img7.jpg" alt="Чоловік в окулярах"
+                    width="270" height="260">
+            </picture>
             <h3 class="command__title">Михайло Єрмаков</h3>
             <p class="command__post">
                 UI Designer
@@ -192,7 +242,8 @@
 </main>
    <footer class="footer">
     <div class="footer__container container">
-        <div>
+        <div class="footer__tablet">
+        <div class="footer__box">
     <a class="logo" href="./index.html">
         <span class="logo__color">Web</span><span class="logo--light-color">Studio</span>
     </a>
@@ -206,7 +257,7 @@
     </div>
     <div class="soc-links__footer">
     <p class="soc-links__text">приєднуйтесь</p>
-            <ul class="soc-links list">
+            <ul class="soc-links soc-links--position list">
             <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg></a>
@@ -224,6 +275,7 @@
                     </svg></a>
             </li>
             </ul>
+            </div>
             </div>
             <form class="footer-form">
                 <p class="footer-form__text">Підпишіться на розсилку</p>
@@ -270,6 +322,10 @@
         </form>
     </div>
    </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>

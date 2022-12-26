@@ -20,7 +20,7 @@
 
             <ul class="navigation list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
-                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link current">Портфоліо</a></li>
+                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  current">Портфоліо</a></li>
                 <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
             </ul>
         </nav>
@@ -34,6 +34,45 @@
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="menu-open js-open-menu"><svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg></button>
+    </div>
+    <div class="mobile-menu js-menu-container">
+        <div class="menu-content container">
+            <button type="button" class="menu-close js-close-menu"><svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-mob">
+                        <use>
+                </svg></button>
+            <nav class="mob-nav">
+                <ul class="mob-navigation list">
+                    <li class="mob-navigation__item"><a href="./index.html"
+                            class="mob-navigation__link current">Студія</a></li>
+                    <li class="mob-navigation__item"><a href="./portfolio.html"
+                            class="mob-navigation__link">Портфоліо</a></li>
+                    <li class="mob-navigation__item"><a href="" class="mob-navigation__link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="mob-contacts list">
+                    <li class="mob-contacts__item"><a class="mob-contacts__link" href="tel:+380961111111">+38 096 111 11
+                            11</a></li>
+                    <li class="mob-contacts__item"><a class="mob-contacts__mail"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <div class="mob-soc-link">
+                    <ul class="mob-soc-link-list list">
+                        <li><a class="mob-soc-link__link" href="">Instagram</a><span class="mob-soc-link__line"></span>
+                        </li>
+                        <li><a class="mob-soc-link__link" href="">Twitter</a><span class="mob-soc-link__line"></span>
+                        </li>
+                        <li><a class="mob-soc-link__link" href="">Facebook</a><span class="mob-soc-link__line"></span>
+                        </li>
+                        <li><a class="mob-soc-link__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
     <main>
@@ -54,7 +93,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img21.jpg" alt="Веб-сайт" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img21-tab.jpg 1x, ./images/img21-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img21-mob.jpg 1x, ./images/img21-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x" src="./images/img21.jpg" alt="Веб-сайт" width="370"
+                        height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                     <h2 class="portfolio__title" >Технокряк</h2>
@@ -67,7 +112,12 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img22.jpg" alt="Два баскетболіста" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img22-tab.jpg 1x, ./images/img22-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img22-mob.jpg 1x, ./images/img22-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" src="./images/img22.jpg" alt="Два баскетболіста" width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Постер New Orlean vs Golden Star</h2>
@@ -80,7 +130,12 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img23.jpg" alt="Риба" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img23-tab.jpg 1x, ./images/img23-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img23-mob.jpg 1x, ./images/img23-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x" src="./images/img23.jpg" alt="Риба" width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Ресторан Seafood</h2>
@@ -93,7 +148,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img24.jpg" alt="Навушники" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img24-tab.jpg 1x, ./images/img24-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img24-mob.jpg 1x, ./images/img24-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x" src="./images/img24.jpg" alt="Навушники"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Проєкт Prime</h2>
@@ -106,7 +167,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img25.jpg" alt="Дві коробки" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img25.jpg 1x, ./images/img25-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img25-tab.jpg 1x, ./images/img25-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img25-mob.jpg 1x, ./images/img25-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img25.jpg 1x, ./images/img25-2x.jpg 2x" src="./images/img25.jpg" alt="Дві коробки"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Проєкт Boxes</h2>
@@ -119,7 +186,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img26.jpg" alt="Монітор компʼютера" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img26.jpg 1x, ./images/img26-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img26-tab.jpg 1x, ./images/img26-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img26-mob.jpg 1x, ./images/img26-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img26.jpg 1x, ./images/img26-2x.jpg 2x" src="./images/img26.jpg" alt="Монітор компʼютера"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Inspiration has no Borders</h2>
@@ -132,7 +205,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img27.jpg" alt="Книжка" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img27.jpg 1x, ./images/img27-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img27-tab.jpg 1x, ./images/img27-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img27-mob.jpg 1x, ./images/img27-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img27.jpg 1x, ./images/img27-2x.jpg 2x" src="./images/img27.jpg" alt="Книжка"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Видання Limited Edition</h2>
@@ -145,7 +224,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img28.jpg" alt="Бірка" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img28.jpg 1x, ./images/img28-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img28-tab.jpg 1x, ./images/img28-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img28-mob.jpg 1x, ./images/img28-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img28.jpg 1x, ./images/img28-2x.jpg 2x" src="./images/img28.jpg" alt="Бірка"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Проєкт LAB</h2>
@@ -158,7 +243,13 @@
                     <div class="portfolio__thumb">
                         <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
-                <img src="./images/img29.jpg" alt="Бірка" width="370" height="294">
+                <picture>
+                    <source srcset="./images/img29.jpg 1x, ./images/img29-2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/img29-tab.jpg 1x, ./images/img29-tab-2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/img29-mob.jpg 1x, ./images/img29-mob-2x.jpg 2x" media="(min-width:480px)">
+                    <img srcset="./images/img29.jpg 1x, ./images/img29-2x.jpg 2x" src="./images/img29.jpg" alt="Ноутбук"
+                        width="370" height="294">
+                </picture>
                     </div>
                 <div class="portfolio__box">
                 <h2 class="portfolio__title" >Growing Business</h2>
@@ -172,46 +263,49 @@
     </main>
 <footer class="footer">
     <div class="footer__container container">
-        <div>
-            <a class="logo" href="./index.html">
-                <span class="logo__color">Web</span><span class="logo--light-color">Studio</span>
-            </a>
-            <address>
-                <ul class="address list">
-                    <li class="address__item"><a class="address__place" href="https://goo.gl/maps/ezj5u4Qgm3ewog677"
-                            target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="address__item"><a class="address__link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-        </div>
+        <div class="footer__tablet">
+            <div class="footer__box">
+                <a class="logo" href="./index.html">
+                    <span class="logo__color">Web</span><span class="logo--light-color">Studio</span>
+                </a>
+                <address>
+                    <ul class="address list">
+                        <li class="address__item"><a class="address__place" href="https://goo.gl/maps/ezj5u4Qgm3ewog677"
+                                target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="address__item"><a class="address__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
             <div class="soc-links__footer">
                 <p class="soc-links__text">приєднуйтесь</p>
-                <ul class="soc-links list">
-                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg width="20"
-                                height="20">
+                <ul class="soc-links soc-links--position list">
+                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg
+                                width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg></a>
                     </li>
-                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg width="20"
-                                height="20">
+                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg
+                                width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg></a>
                     </li>
-                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg width="20"
-                                height="20">
+                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg
+                                width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg></a>
                     </li>
-                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg width="20"
-                                height="20">
+                    <li class="soc-links__item"><a class="soc-links__icon soc-links__icon--light-color" href="#"><svg
+                                width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg></a>
                     </li>
                 </ul>
             </div>
+        </div>
         <form class="footer-form">
             <p class="footer-form__text">Підпишіться на розсилку</p>
             <div class="footer-form__mail">
@@ -225,5 +319,9 @@
         </form>
     </div>
 </footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
