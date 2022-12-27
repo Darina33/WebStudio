@@ -1,15 +1,29 @@
 .footer-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @include tablet {
+            .footer-form__input {
+                width: 450px;
+            }
+        }
+
     @include desktop {
+        width: auto;
     align-items: flex-start;
     margin-left: 94px;
-    .footer__tablet {
+
+      .footer-form__input {
+        margin-right: 12px;
+        width: 358px;
+      }
+
+      .footer__tablet {
         gap:0px;
         }
-    }
+      }
    
     &__text {
             margin: 0;
@@ -25,6 +39,7 @@
             @extend %flex-align;
             gap:20px;
             margin-top: 20px;
+            width: 100%;
 
             @include desktop {
                 flex-direction: row;
@@ -33,8 +48,7 @@
         }
     
     &__input {
-            margin-right: 12px;
-            width: 358px;
+            width: calc(100% - 30px);
             background-color: transparent;
             height: 50px;
             padding-left: 16px;
